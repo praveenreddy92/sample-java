@@ -1,0 +1,4 @@
+FROM openjdk:11-jre-slim
+WORKDIR /app
+COPY ./target/sample-java-project.jar /app
+CMD ["java", "-jar", "sample-java-project.jar"]
